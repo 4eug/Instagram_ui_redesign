@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_ui_redesign/models/post_model.dart';
 import 'package:instagram_ui_redesign/screens/viewpostscreen.dart';
+import 'package:ionicons/ionicons.dart';
 
 class FeedScreen extends StatefulWidget {
   @override
@@ -90,7 +91,7 @@ class _FeedScreenState extends State<FeedScreen> {
                             Row(
                               children: <Widget>[
                                 IconButton(
-                                  icon: Icon(Icons.favorite_border),
+                                  icon: Icon(Ionicons.heart),
                                   iconSize: 25.0,
                                   color: Colors.black,
                                   onPressed: () => print('Like post'),
@@ -130,7 +131,7 @@ class _FeedScreenState extends State<FeedScreen> {
                           ],
                         ),
                         IconButton(
-                          icon: Icon(Icons.bookmark_border),
+                          icon: Icon(Ionicons.bookmark),
                           iconSize: 25.0,
                           color: Colors.black,
                           onPressed: () => print('Save post'),
@@ -175,7 +176,7 @@ class _FeedScreenState extends State<FeedScreen> {
                 Row(
                   children: <Widget>[
                     IconButton(
-                      icon: Icon(Icons.add_box_outlined),
+                      icon: Icon(Ionicons.add),
                       iconSize: 25.0,
                       color: Colors.black,
                       onPressed: () => print('Add post'),
@@ -184,7 +185,7 @@ class _FeedScreenState extends State<FeedScreen> {
                     Container(
                       width: 35.0,
                       child: IconButton(
-                        icon: Icon(Icons.favorite_border_outlined),
+                        icon: Icon(Ionicons.heart),
                         color: Colors.black,
                         iconSize: 25.0,
                         onPressed: () {
@@ -262,7 +263,7 @@ class _FeedScreenState extends State<FeedScreen> {
           items: [
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.home,
+                Ionicons.home,
                 size: 25.0,
                 color: Colors.black,
               ),
@@ -271,7 +272,7 @@ class _FeedScreenState extends State<FeedScreen> {
             ),
             BottomNavigationBarItem(
               icon: Icon(
-                Icons.search,
+                Ionicons.search,
                 size: 25.0,
                 color: Colors.black,
               ),
@@ -291,8 +292,7 @@ class _FeedScreenState extends State<FeedScreen> {
               title: Text(''),
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.notifications_outlined,
-                  size: 30.0, color: Colors.black),
+              icon: Icon(Icons.shop, size: 30.0, color: Colors.black),
               // ignore: deprecated_member_use
               title: Text(''),
             ),
@@ -308,7 +308,7 @@ class _FeedScreenState extends State<FeedScreen> {
                     print('Profile Page');
                   },
                   child: Icon(
-                    Icons.person_outline,
+                    Ionicons.person_outline,
                     size: 30.0,
                     color: Colors.black,
                   ),

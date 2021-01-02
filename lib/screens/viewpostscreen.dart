@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:instagram_ui_redesign/models/comments_model.dart';
 import 'package:instagram_ui_redesign/models/post_model.dart';
 
@@ -144,7 +145,8 @@ class _PostScreenState extends State<PostScreen> {
                                   Row(
                                     children: <Widget>[
                                       IconButton(
-                                        icon: Icon(Icons.favorite_border),
+                                        icon: Icon(MaterialCommunityIcons
+                                            .heart_outline),
                                         iconSize: 25.0,
                                         color: Colors.black,
                                         onPressed: () => print('Like post'),
@@ -177,7 +179,8 @@ class _PostScreenState extends State<PostScreen> {
                                 ],
                               ),
                               IconButton(
-                                icon: Icon(Icons.bookmark_border),
+                                icon: Icon(
+                                    MaterialCommunityIcons.bookmark_outline),
                                 iconSize: 25.0,
                                 color: Colors.black,
                                 onPressed: () => print('Save post'),
